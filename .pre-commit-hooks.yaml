@@ -5,5 +5,5 @@
   language: python
   require_serial: false
   always_run: true
-  stages: commit
+  stages: ['commit']
   additional_dependencies: []
