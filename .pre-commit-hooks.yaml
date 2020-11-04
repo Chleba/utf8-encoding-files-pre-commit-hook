@@ -1,9 +1,9 @@
-id: utf8-encoding
-name: utf8-encoding
-description: Checks and convert C, C++ files to utf-8
-entry: utf8-encoding
-language: python
-require_serial: false
-always_run: true
-stages: commit
-additional_dependencies: []
+- id: utf8-encoding
+  name: utf8-encoding
+  description: Checks and convert C, C++ files to utf-8
+  entry: utf8-encoding
+  language: python
+  require_serial: false
+  always_run: true
+  stages: commit
+  additional_dependencies: []

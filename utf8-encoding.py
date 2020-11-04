@@ -13,7 +13,7 @@ HEADER_FILES = glob.iglob(ROOT_DIR + '**/*.hpp', recursive=True);
 ALL_FILES = list(CPP_FILES) + list(HEADER_FILES);
 
 def files_encoding_function():
-    """Check encoding and convert to UTF-8, if encoding is no UTF-8."""
+    """Check encoding and convert to UTF-8, if encoding is not UTF-8."""
     print(".. get all *.c, *.cpp, *.h, *.hpp files from root ..");
     for filename in ALL_FILES:
         #  Not 100% accuracy:
@@ -40,7 +40,7 @@ def files_encoding_function():
 
                     # rename converted file and remove old one
                     os.remove(filename);
-                    #  os.rename(filename + '_new', filename);
+                    os.rename(filename + '_new', filename);
 
                     print(filename +
                         ' in ' +
